@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v,1673079016,verilog,,,,mips_tb,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v,1673093701,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v,,ArithmeticLogicUnit;adder_32,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v,1673095291,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v,,CPU,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v,1673092482,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v,,ControllerUnit,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v,1673090783,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v,,DataMemory,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v,1673090959,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v,,GeneralPurposeRegisters,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v,1673090829,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v,,InstructionMemory,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v,1673078075,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v,,Mux,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v,1673078306,verilog,,D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v,,ProgramCounter,,,,,,,,
+D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v,1673078372,verilog,,C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v,,SignExtendUnit,,,,,,,,

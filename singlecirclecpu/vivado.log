@@ -1,0 +1,728 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  7 19:19:04 2023
+# Process ID: 37092
+# Current directory: D:/CSI/singlecirclecpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent315444 D:\CSI\singlecirclecpu\singlecirclecpu.xpr
+# Log file: D:/CSI/singlecirclecpu/vivado.log
+# Journal file: D:/CSI/singlecirclecpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CSI/singlecirclecpu/singlecirclecpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Sat Jan  7 19:19:34 2023] Launched synth_1...
+Run output will be captured here: D:/CSI/singlecirclecpu/singlecirclecpu.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:143]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 737.965 ; gain = 24.504
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:143]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 770.000 ; gain = 0.000
+run 10 ns
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 819.164 ; gain = 0.000
+run 10 ns
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 919.730 ; gain = 7.820
+current_wave_config {Untitled 4}
+Untitled 4
+log_wave {/mips_tb/topLevel/DM/data} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 919.730 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:90]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:91]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 919.730 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:108]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:109]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:110]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:113]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 925.738 ; gain = 0.000
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-311] analyzing module ArithmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralPurposeRegisters
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtendUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/计算机系统实现I/SingleCycle/mips_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+"xelab -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 70e58dab0db44cbf8748d797a7f8b49b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mips_tb_behav xil_defaultlib.mips_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A0' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:108]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A1' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:109]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'A2' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:110]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'result' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:113]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:123]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cout' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:124]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControllerUnit
+Compiling module xil_defaultlib.GeneralPurposeRegisters
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.adder_32
+Compiling module xil_defaultlib.ArithmeticLogicUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.SignExtendUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.mips_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mips_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CSI/singlecirclecpu/singlecirclecpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_tb_behav -key {Behavioral:sim_1:Functional:mips_tb} -tclbatch {mips_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mips_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mips_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 925.738 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  7 19:47:11 2023...

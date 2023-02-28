@@ -1,0 +1,378 @@
+
+*** Running vivado
+    with args -log CPU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 86364 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.469 ; gain = 170.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ControllerUnit' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ControllerUnit' (1#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ControllerUnit.v:34]
+INFO: [Synth 8-6157] synthesizing module 'GeneralPurposeRegisters' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'GeneralPurposeRegisters' (2#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/GeneralPurposeRegisters.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (3#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/Mux.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'result' does not match port width (32) of module 'Mux' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:94]
+INFO: [Synth 8-6157] synthesizing module 'ArithmeticLogicUnit' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:131]
+INFO: [Synth 8-6157] synthesizing module 'adder_32' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_32' (4#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'cout' does not match port width (1) of module 'adder_32' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:143]
+WARNING: [Synth 8-689] width (32) of port connection 'cout' does not match port width (1) of module 'adder_32' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:145]
+WARNING: [Synth 8-6090] variable 'Over' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:154]
+WARNING: [Synth 8-6090] variable 'Over' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'ArithmeticLogicUnit' (5#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:131]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (6#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ProgramCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v:25]
+INFO: [Synth 8-3876] $readmem data file 'D:\CSI\mips1.txt' is read successfully [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (7#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/InstructionMemory.v:25]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (8#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/DataMemory.v:28]
+INFO: [Synth 8-6157] synthesizing module 'SignExtendUnit' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtendUnit' (9#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/SignExtendUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (10#1) [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/CPU.v:16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[0]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[31]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[30]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[29]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[28]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[27]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[26]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[25]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[24]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[23]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[22]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[21]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[20]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[19]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[18]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[17]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[16]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[15]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[14]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[13]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[12]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[1]
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 600.617 ; gain = 299.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 600.617 ; gain = 299.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 600.617 ; gain = 299.152
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5546] ROM "C" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:153]
+WARNING: [Synth 8-327] inferring latch for variable 'mask_reg' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:172]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/CSI/singlecirclecpu/singlecirclecpu.srcs/sources_1/new/ArithmeticLogicUnit.v:175]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 782.953 ; gain = 481.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |DataMemory__GB0 |           1|     32768|
+|2     |DataMemory__GB1 |           1|      2464|
+|3     |DataMemory__GB2 |           1|      8800|
+|4     |DataMemory__GB3 |           1|     11008|
+|5     |DataMemory__GB4 |           1|     16298|
+|6     |DataMemory__GB5 |           1|     30038|
+|7     |CPU__GC0        |           1|      6464|
++------+----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 5     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1057  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	  10 Input     32 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1058  
+	   4 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1024  
+Module ControllerUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module GeneralPurposeRegisters 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Mux__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Mux__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module adder_32__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+Module adder_32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+Module ArithmeticLogicUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module Mux__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|InstructionMemory | p_0_out    | 64x32         | LUT            | 
+|CPU               | p_0_out    | 64x32         | LUT            | 
++------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 814.516 ; gain = 513.051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 814.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 814.516 ; gain = 513.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 814.516 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/CSI/singlecirclecpu/singlecirclecpu.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  7 19:20:39 2023...

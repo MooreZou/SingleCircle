@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  7 18:06:39 2023
+# Process ID: 152276
+# Current directory: D:/CSI/singlecirclecpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent124792 D:\CSI\singlecirclecpu\singlecirclecpu.xpr
+# Log file: D:/CSI/singlecirclecpu/vivado.log
+# Journal file: D:/CSI/singlecirclecpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CSI/singlecirclecpu/singlecirclecpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source mips_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source mips_tb.tcl
+run 10 ns
+run 10 ns
+run 10 ns
+reset_run synth_1
+close_sim
